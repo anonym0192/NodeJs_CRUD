@@ -1,0 +1,8 @@
+{{> header}}
+<main>
+    <div class="container">
+        <h1>404 Error</h1>
+        <p>The Page you are looking for was not found</p>
+    </div>
+</main>
+{{> footer}}

@@ -1,0 +1,23 @@
+{{> header}}
+<main>
+    <div class="container">
+        <div class="post-area">
+            <h1 class="post--title">{{title}}</h1>
+            <div class="post--meta">
+                <span class="author"><i class="bi bi-person"></i> {{author.name}}</span> 
+                <span class="tags"><i class="bi bi-tags"></i> {{tags}}</span>
+            </div>
+            {{#photo}}
+                <div class="post--image">
+                    <img src="/uploads/{{photo}}" alt="post image"/>
+                </div>
+            {{/photo}}
+            
+            <div class="post--body">
+                <p>{{body}}</p>
+            </div>
+            
+        </div>
+    </div>
+</main>
+{{> footer}}

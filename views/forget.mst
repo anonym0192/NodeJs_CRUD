@@ -1,0 +1,23 @@
+{{> header}}
+    <main>
+        <div class="container">
+            <h2>Type in your E-mail</h2>
+            {{#flashes}}
+                {{#success}}
+                    <div class="alert alert-success">{{.}}</div>
+                {{/success}}
+                {{#error}}
+                    <div class="alert alert-danger">{{.}}</div>
+                {{/error}}
+            {{/flashes}}
+            <form method="post">
+                <div class="mb-3">
+                    <label class="label-control" for="email">E-mail</label>
+                    <input class="form-control" id="email" type="email" name="email" />
+                </div>                       
+                
+                <input class="btn btn-primary" type="submit" value="Send"/>      
+            </form>
+        </div>
+    </main>
+{{> footer}}

@@ -1,0 +1,32 @@
+{{ > header}}
+    <main>
+    <div class="container">
+        {{#flashes}}
+            {{#error}}
+                <div class="alert alert-danger">{{.}}</div>
+            {{/error}}
+        {{/flashes}}
+        <form method="post" action="/post/add" enctype="multipart/form-data">           
+            <div class="mb-3">
+                <label class="label-control" for="title">Title</label>     
+                <input class="form-control" id="title" type="text" name="title"/>
+            </div>
+            <div class="mb-3">
+                <label class="label-control" for="body">Body</label>
+                <textarea class="form-control" id="body" name="body" rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+                <label class="label-control" for="tags">Tags:</label>
+                <input class="form-control" id="tags" type="text" name="tags" placeholder="use only comma-separated values"/>
+            </div>
+
+            <div class="mb-3">
+                <label class="label-control" for="photo">Post Image:</label>
+                <input class="form-control" id="photo" type="file" name="photo"/>
+            </div>
+
+            <input  class="btn btn-primary" type="submit" value="Add Post"/>
+        </form>
+    </div>
+    </main>
+{{> footer}}

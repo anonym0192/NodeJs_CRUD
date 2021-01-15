@@ -1,0 +1,57 @@
+{{> header}}
+<main>
+    <div class="tags-area">
+        Tags:
+        {{#tags}}
+            <div class="tag ">
+                <a class="{{class}}" href="/?t={{_id}}"> 
+                    {{_id}}<span class="ml-1">({{count}})</span> 
+                </a>
+            </div>
+        {{/tags}}
+    </div>
+
+    <div class="container">
+    {{#flashes}}
+        {{#success}}
+            <div class="alert alert-success">{{.}}</div>
+        {{/success}}
+        {{#error}}
+            <div class="alert alert-danger">{{.}}</div>
+        {{/error}}
+    {{/flashes}}
+
+    <h2>Post List</h2>
+    {{#havePosts}}
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th colspan="2">Body</th>
+                </tr>
+            </thead>
+            
+            {{#posts}}
+                <tbody>
+                    <tr>
+                        <td><a href="post/{{slug}}">{{title}}</a></td>
+                        <td>{{body}}</td>
+                        <td>
+                            <a class="post-action" href="post/{{slug}}/edit">
+                                <i class="bi bi-pencil"></i>
+                            </a>
+                            <a class="post-action" href="post/{{_id}}/delete">
+                                <i class="bi bi-trash"></i>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody> 
+            {{/posts}}
+        </table>
+    {{/havePosts}}
+    {{^havePosts}}
+        <div class="not-posts">There are no posts to show</div>
+    {{/havePosts}}
+    </div>
+</main>
+{{> footer}}

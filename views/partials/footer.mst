@@ -1,0 +1,8 @@
+    <footer>
+        <div class="container">
+            <p>All rights reserved - 2020</p>
+        </div>
+    </footer>
+    <script src="/assets/js/bootstrap.min.js"></script>
+</body>
+</html>

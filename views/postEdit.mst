@@ -1,0 +1,32 @@
+{{> header}}
+    <main>
+        <div class="container">
+            <form method="post" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label class="label-control" for="title">Title</label>     
+                    <input class="form-control" id="title" type="text" name="title" value="{{title}}"/>
+                </div>
+                <div class="mb-3">
+                    <label class="label-control" for="body">Body</label>
+                    <textarea class="form-control" id="body" name="body" rows="3">{{body}}</textarea>
+                </div>
+                <div class="mb-3">
+                    <label class="label-control" for="tags">Tags:</label>
+                    <input class="form-control" id="tags" type="text" name="tags" 
+                    value="{{tags}}" placeholder="use only comma-separated values"/>
+                </div>
+                {{#photo}}
+                        <img class="post-image-preview" src="/uploads/{{photo}}" alt="Post Image" />
+                        <br/>
+                {{/photo}}
+
+                <div class="mb-3">
+                    <label class="label-control" for="photo">Post Image:</label>
+                    <input class="form-control" id="photo" type="file" name="photo"/>
+                </div>
+
+                <input  class="btn btn-primary" type="submit" value="Update Post"/>             
+            </form>
+        </div>
+    </main>
+{{> footer}}

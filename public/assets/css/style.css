@@ -1,0 +1,209 @@
+
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    color: #111;
+    background-color: #e5ffff;
+}
+
+form{
+    max-width: 400px;
+    margin-top: 2rem;
+}
+
+input[type='file'] {
+    border: 0;
+}
+
+
+/*
+* 
+* Header Area
+*
+*/
+
+header{
+    background-image: url('../img/banner1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.top{
+    padding: 40px 0;
+}
+
+.top h1{
+    color: #f4f4f4;
+    text-align: center;
+}
+nav{
+    background-color: #5f8fe6;
+    padding: 0;
+    display: flex
+}
+.main-menu{
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+.main-menu li{
+    display: flex;
+    color: whitesmoke;
+    background-color: #444;
+}
+.main-menu a{
+    display: flex;
+    flex: 1;
+    padding: 16px 20px;
+    color: inherit;
+    position: relative;
+    text-decoration: none;
+}
+
+.main-menu a::before{
+    content: '';
+    position: absolute;
+    bottom: 13px;
+    width: 65%;
+    height: 1px;
+    transition: all ease 1s;
+    background-color: #f9f9f9;
+    transform: scale(0);
+    transform-origin: top left;
+}
+
+.main-menu a:hover{
+    color: inherit;
+    text-decoration: none;
+}
+
+.main-menu a:hover::before{
+    transform: scale(1);
+}
+.user-info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+
+/*
+* 
+* Main Area
+*
+*/
+
+main{
+    min-height: 65vh;
+}
+
+.post-action{
+    margin: 0 10px;
+}
+
+.post-image-preview{
+    width: 200px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.posts{
+    display: flex;
+}
+
+.post--thumbnail{
+    width: 200px;
+    height: auto;
+}
+
+.post--thumbnail img{
+    width: 100%;
+    height: auto;
+}
+
+.post-area{
+    margin-top: 30px;
+}
+
+.post--image{
+    margin: auto;
+    display: block;
+}
+.tags-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.tag{
+    display: flex;
+    background-color: #5f8fe6;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+.tag a{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 5px 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.tag a:hover{
+    text-decoration: none;
+}
+
+.tag .selected{
+    color: #7c18ff;
+}
+
+.post--meta .tags{
+    margin-left: 15px;   
+}
+
+.post--meta .author{
+    margin-right: 15px;
+}
+
+.post--title{
+
+}
+
+.post--image{
+    width: 750px;
+    height: auto;
+}
+
+.post--image img{
+    width: 100%;
+    height: auto;
+}
+
+.post--body{
+    margin: 1rem 0;line-height: 1.5;
+}
+
+/*
+* 
+* Footer Area
+*
+*/
+
+footer{
+    padding: 50px 0;
+    background-color: #5f8fe6;
+    margin-top: 50px;
+}
+
+footer p{
+    text-align: center;
+    color: #f9f9f9;
+}
+
+
+

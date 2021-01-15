@@ -1,0 +1,26 @@
+{{> header}}
+<main>
+    <div class="container">
+        <h2>Sign In</h2>
+        {{#flashes}}
+            {{#error}}
+                <div class="alert alert-danger">{{.}}</div>
+            {{/error}}
+        {{/flashes}}
+        <form method='post'>
+            <div class="mb-3">
+                <label class="form-label" for="email">Username</label>
+                <input class="form-control" id="email" type="email" name="email"/>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="password">Password</label>
+                <input class="form-control" id="password" type="password" name="password" />
+            </div>
+
+            <button class="btn btn-primary d-block" type="submit">Sign In</button>
+
+            <a class="mt-2 d-inline-block" href="/users/forget">Forgot my password</a>
+        </form>
+    </div>
+</main>
+{{>footer}}

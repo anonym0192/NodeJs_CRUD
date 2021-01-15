@@ -1,0 +1,39 @@
+{{> header}}
+    <main>
+        <div class="container">
+            <h2>User Profile Info</h2>
+            {{#flashes}}
+                {{#error}}
+                    <div class="alert alert-danger">{{.}}</div>
+                {{/error}}
+            {{/flashes}}
+            <form method="post">
+                <div class="mb-3">
+                    <label for="name" class="label-control">Full Name</label>
+                    <input id="name" class="form-control" type="text" name="name" value="{{user.name}}" />
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="label-control">Email</label>
+                    <input id="email" class="form-control" type="email" name="email"  value="{{user.email}}"/>
+                </div>
+
+                <input class="btn btn-primary" type="submit" value="Update profile info"/>
+            </form>
+
+            <form method="post" action="/users/edit/password">
+                <div class="mb-3">
+                    <label for="password" class="label-control">Password</label>
+                    <input id="password" class="form-control" type="password" name="pass" />
+                </div>
+
+                <div class="mb-3">
+                    <label for="password" class="label-control">Confirm Password</label>
+                    <input id="password" class="form-control" type="password" name="pass-confirm" />
+                </div>
+
+                <input class="btn btn-primary" type="submit" value="Update password"/>                                     
+            </form>
+        </div>
+    </main>
+{{> footer}}

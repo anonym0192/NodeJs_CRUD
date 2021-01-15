@@ -1,0 +1,31 @@
+<!Doctype html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="/assets/css/style.css"/>
+        <link type="text/css" rel="stylesheet" href="/assets/css/bootstrap.min.css"/>
+        <link type="text/css" rel="stylesheet" href="/assets/css/bootstrap-icons.css"/>
+        <title>{{h.defaultPageTitle}}</title>  
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="top">
+                    <h1>NodeJS CRUD Sample</h1>
+                </div>
+                <nav> 
+                    <ul class="main-menu">
+                        {{#h.menu}}
+                            <li><a href={{slug}}>{{name}}</a></li>
+                        {{/h.menu}}
+                    </ul> 
+                </nav>
+            </div>
+        </header>
+            {{#user}}
+                <div class="user-info container">
+                    <span>Welcome <a href="/users/edit">{{name}}</a>!</span>
+                    <span><a href="/users/logout">Logout</a></span>
+                </div>
+            {{/user}}
+        
+    
