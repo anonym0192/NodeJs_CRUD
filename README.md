@@ -1,7 +1,7 @@
 # NodeJs_CRUD
 A CRUD created while  learning NodeJS 
 
-## Installation
+# Installation
 
 Use the package manager Npm to install dependecies.
 
@@ -9,10 +9,10 @@ Run "npm install" command to install the dependencies
 
 ```
 
-## Features
+# Features
 
 
 
 
-## License
+# License
 [MIT](https://choosealicense.com/licenses/mit/)
