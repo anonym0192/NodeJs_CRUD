@@ -12,8 +12,11 @@ npm install
 
 # Features
 -Create, Update, Delete a New User
+
 -Create, Update, Delete a New Post
+
 -Authentication Login Logout
+
 -View all Posts created
 -View each Post indiviadually
 -Send a image to the Post
