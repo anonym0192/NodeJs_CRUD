@@ -10,6 +10,10 @@ npm install
 
 ```
 
+# Config
+You need to fill the variables.env file fields. Include your Mongodb database URL in the "DATABASE" field, and your SMTP server configuration in the "SMTP" fields. 
+
+
 # Features
 -Create, Update, Delete a New User
 
@@ -22,6 +26,8 @@ npm install
 -View each Post indiviadually
 
 -Send a image to the Post
+
+
 
 
 
