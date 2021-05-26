@@ -18,7 +18,9 @@ npm install
 -Authentication Login Logout
 
 -View all Posts created
+
 -View each Post indiviadually
+
 -Send a image to the Post
 
 
