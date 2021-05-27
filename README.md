@@ -26,7 +26,7 @@ npm install
 -Password redefinition send by e-mail
 
 ## Configuration
-You need to fill your Backend Api Path in the .env file, inform in the following field "APP_API_BASEURL";
+You need to fill the variables.env file fields. Include your Mongodb database URL in the "DATABASE" field, and your SMTP server configuration in the "SMTP" fields. 
 
 ## Technologies
 Project is created with:
