@@ -6,7 +6,7 @@ const multerOptions = {
     storage: multer.memoryStorage(),
     fileFilter: (req, file, next ) => {
 
-        const allowed = ['image/jpg', 'image/jpeg', 'image/png','image/gif'];
+        const allowed = ['image/jpg', 'image/jpeg', 'image/png'];
 
         if(allowed.includes(file.mimetype)){
             next(null, true);
