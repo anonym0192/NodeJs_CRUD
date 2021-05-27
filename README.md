@@ -1,5 +1,5 @@
 # NodeJs_CRUD
-A CRUD created while learning NodeJS.
+A Blog like CRUD created while learning NodeJS, using the Express framework and Bootstrap 4.
 
 ## Installation
 
@@ -11,17 +11,19 @@ npm install
 ```
 
 ## Features
--Create, Update, Delete a New User
+-Create, Update, Delete an User
 
--Create, Update, Delete a New Post
+-Create, Update, Delete a Post
 
--Authentication Login Logout
+-Authentication Login, Logout
 
 -View all Posts created
 
 -View each Post indiviadually
 
--Send a image to the Post
+-Send the image of the Post
+
+-Password redefinition send by e-mail
 
 ## Configuration
 You need to fill the variables.env file fields. Include your Mongodb database URL in the "DATABASE" field, and your SMTP server configuration in the "SMTP" fields. 
@@ -29,22 +31,22 @@ You need to fill the variables.env file fields. Include your Mongodb database UR
 ## Technologies
 Project is created with:
 
-* bootstrap-icons: "^1.3.0",
+* bootstrap-icons: ^1.3.0,
 * cookie-parser 1.4.5,
-* dotenv: "^8.2.0",
-* express": "^4.17.1",
-* express-flash: "0.0.2",
-* express-session: "^1.17.1",
-* jimp: "^0.16.1",
-* mongoose: "^5.10.0",
-* multer: "^1.4.2",
-* mustache-express: "^1.3.0",
-* nodemailer: "^6.4.14",
-* passport: "^0.4.1",
-* passport-local: "^1.0.0",
-* passport-local-mongoose: "^6.0.1",
-* slug: "^3.3.4",
-* uuid: "^8.3.0"
+* dotenv: ^8.2.0,
+* express: ^4.17.1,
+* express-flash: 0.0.2,
+* express-session: ^1.17.1,
+* jimp: ^0.16.1,
+* mongoose: ^5.10.0,
+* multer: ^1.4.2,
+* mustache-express: ^1.3.0,
+* nodemailer: ^6.4.14,
+* passport: ^0.4.1,
+* passport-local: ^1.0.0,
+* passport-local-mongoose: ^6.0.1,
+* slug: ^3.3.4,
+* uuid: ^8.3.0
 
 # License
 [MIT](https://choosealicense.com/licenses/mit/)
